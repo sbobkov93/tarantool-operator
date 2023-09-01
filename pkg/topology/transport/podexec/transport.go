@@ -69,7 +69,7 @@ func (r *PodExec) execShellCommand(
 				Stderr:    false,
 				TTY:       false,
 				Command:   command.Command,
-				Container: r.ContainerName,
+				Container: "cartridge",
 			},
 			runtime.NewParameterCodec(r.RuntimeScheme),
 		)
